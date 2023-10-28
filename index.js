@@ -4,7 +4,7 @@ import app from "./app.js";
 
 const { DB_HOST, PORT } = process.env;
 
-async () => {
+(async () => {
   await mongoose
     .connect(DB_HOST)
     .then(() => {
@@ -16,4 +16,4 @@ async () => {
       console.log(err.message);
       process.exit(1);
     });
-};
+})();

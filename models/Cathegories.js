@@ -10,6 +10,6 @@ const schema = new Schema(
   { versionKey: false, timestamps: true }
 );
 
-const Collection = model("collection", schema);
+const Cathegories = model("cathegorie", schema);
 
-export default Collection;
+export default Cathegories;
