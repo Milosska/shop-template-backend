@@ -1,7 +1,7 @@
 import catchAsyncWrapper from "../utils/catchAsyncWrapper.js";
-import { getCathegoriesService } from "../services/cathegoriesService.js";
+import { getAllCathegoriesService } from "../services/cathegoriesService.js";
 
-export const getCathegories = catchAsyncWrapper(async (req, res, next) => {
-  const cathegories = await getCathegoriesService();
+export const getAllCathegories = catchAsyncWrapper(async (req, res, next) => {
+  const cathegories = await getAllCathegoriesService();
   res.status(200).json(cathegories);
 });
