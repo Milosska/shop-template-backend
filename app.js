@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 
 import { router as cathegoriesRouter } from "./routes/cathegoriesRouter.js";
+import { router as itemsRouter } from "./routes/itemsRouter.js";
 
 const app = express();
 
@@ -9,6 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/cathegories", cathegoriesRouter);
+app.use("/api/items", itemsRouter);
 
 app.use((error, req, res, next) => {
   console.log(error);

@@ -1,5 +1,5 @@
-import Cathegories from "../models/Cathegories.js";
+import Cathegory from "../models/Cathegory.js";
 
 export const getAllCathegoriesService = async () => {
-  return await Cathegories.find({}, "-createdAt -updatedAt");
+  return await Cathegory.find({}, "-createdAt -updatedAt");
 };

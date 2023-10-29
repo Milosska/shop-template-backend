@@ -15,9 +15,9 @@ BASE_URL = "https://shop-template-backend.onrender.com";
 
 The endpoints avaliable are listed below:
 
-### Reviews endpoints
+### Cathegories endpoints
 
-The **reviews endpoints** are avaliable at the route
+The **cathegories endpoints** are avaliable at the route
 
 ```javascript
 "/api/cathegories";
@@ -25,7 +25,19 @@ The **reviews endpoints** are avaliable at the route
 
 Endpoints avaliable:
 
-  <p><span style="color:green; font-size:16px; font-weight: bold;">GET/</span> - get all cathegories of items available at the shop;</p>
+- $\mathbb{\color{green}{GET/}}$ - get all cathegories of items available at the shop;
+
+### Items endpoints
+
+The **items endpoints** are avaliable at the route
+
+```javascript
+"/api/items";
+```
+
+Endpoints avaliable:
+
+- $\mathbb{\color{orange}{POST/}}$ - adds new item to the database;
 
 ## Technology stack
 
